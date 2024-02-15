@@ -1,141 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login form</title>
-    <style>
-        .login-container{
-            background-color:lightsalmon;
-            padding: 5px 5px;
-            margin: 80px 300px;
-            border-radius: 20px;
-    
-        }
-        input[type=text], input[type=password] {
-            width: 30%;
-            padding: 8px 20px;
-        }
-        button
-        {
-             padding: 4px 50px;
-             font-size: 15px;
-        }
-      img{
-        border-radius: 122px;
-      }
-    </style>
-</head>
-<body>
-    <center><div class="login-container">
-  <h1>Login Form</h1><br><br>
-  <center><img src="avatar.png" alt=""></center>
-  <br>
-  <br>
-   <label for="">Enter Username:</label> 
-   <input type="text"><br>
-   <br>
-    <label for="">Password :</label>
-    <input type="password" >
-    <br>
-    <br>
-    <input type="checkbox" name="" id="">Remember me
-    <br><br>
-<button type="submit">Login</button>
-<p>Don't have an account?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Forgot Password?</p>
-</div>
-</center> 
-    
-</body>
-</html>
+<form action="action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
 
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-/* button{
-  font-size: 20px;
-  padding: 8px 8px;
-  margin: 10px 10px;
-  background-color: green;
-  
-}
-.rahul{
-  background-color: brown;
-}
-#btn3{
-  background-color: black;
-  color: white;
-}
-section .class1 button{
-
- 
-} */
-
-
-
-<!-- <body> -->
-    <!-- <table border="">
-        <thead>
-            <tr>
-                <th>PIN</th>
-                <th>NAME</th>
-                <th>DEPT</th>
-                <th>EMAIL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>gundu</td>
-                <td>cse</td>
-                <td>gundu@.com</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>rahul</td>
-                <td>csm</td>
-                <td>rahul@.com</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>jansi</td>
-                <td>ds</td>
-                <td>janu@.com</td>
-            </tr>
-            
-        </tbody>
-    </table>
-   <ul>
-    <li>manoj</li>
-    <li>karthik</li>
-    <li>Simhadri</li>
-   </ul>
-    <ol>
-    <li>manoj</li>
-    <li>karthik</li>
-    <li>Simhadri</li>
-    </ol>
-    <nav></nav>
-    <footer></footer>
-    <main></main>
-    <col>
-    <colgroup></colgroup>
-    <address></address> 
-    <section>
-        <div class="class1">
-            <button style="color:brown;">Login</button>
-        </div>
-    </section>
-    <br>
-    <button class="btn2 rahul">Logout</button><br>
-    <button id="btn3">Register</button> -->
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
